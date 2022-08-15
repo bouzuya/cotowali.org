@@ -25,13 +25,13 @@ You can use `require` to load other files. `require` differs from `source` comma
 
 ```
 // math.li
-fn add(a int, b int) int {
+fn add(a: int, b: int): int {
   return a + b
 }
 
 // main.li
 require './math.li'
-assert add(1, 1) == 2
+assert(add(1, 1) == 2)
 ```
 
 ### Load remote files

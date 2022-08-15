@@ -25,13 +25,13 @@ main()
 
 ```
 // math.li
-fn add(a int, b int) int {
+fn add(a: int, b: int): int {
   return a + b
 }
 
 // main.li
 require './math.li'
-assert add(1, 1) == 2
+assert(add(1, 1) == 2)
 ```
 
 ### リモートファイル読み込み
